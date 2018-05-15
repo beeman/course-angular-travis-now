@@ -10,8 +10,9 @@ script:
   - npm run build
   - npm run now:deploy
 
-after_script:
+after_success:
   - npm run now:alias
+  - npm run release
 
 env:
   global:
