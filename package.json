@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "release": "standard-release",
+    "release": "standard-version && git push --follow-tags origin master",
     "postinstall": "ng generate @beeman/schematics:version-ts --output ./src/environments/version.ts",
     "now:deploy": "now -e NODE_ENV=production --token $NOW_TOKEN dist/angular-travis-now/",
     "now:alias": "now alias --token=$NOW_TOKEN"
