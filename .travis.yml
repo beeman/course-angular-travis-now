@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - node
+
+cache:
+  - npm
+
+script:
+  - npm run now:deploy
+
+after_script:
+  - npm run now:alias
+
+env:
+  global:
+    secure: l/U3gunTro6DClxe7bM2JtNGQsprv1wOpUtujnecbS/gp1FsQJjhGSf+z5Ek2rqid/mq4bl1gBnMecD/Tr0cHSyKDlCaAyqeBJdhc040B3tOF/gzeJHD+tvHWaSmUeaYAA2Nqe3RbLMFGi1xldjRHTg8jSbpo2uZEAeEO/UC+huhONQ3EXIxBUHXCKaB8efN6dHFrCaBJbyxdIy36JaqfkwdSnLdZqUXS5wRCh57bWVlUH9ZnahHYqBhwmZRfv5reE2SjRQ7n+VkZ/G8Nc36r4v6Lw+GZz8AXLSZwZ12U2Pk6oZ8HFuy4ZhI01K5IItIw6LAfdd8iBmFVco4oamAbh+bZRIhujpjBL1y5WUkCPpS4AygpJ7r6qwN+++nZly496qveBGxH9bBO5/jfSsfsTYfr5KIFJLN7z7ZryGC02GxOpG4Ls/hpUo5btaJQYnSZOxjmqYd6f06EYDheEfXh4ogKMUhQgcaNZE5M0dVfOlDPDDBXzMSUPMPMQNhpBvXdBclC6nkm7gUlCB0miXyueyczmX9zSD2ZQ57LOnLGZoAsZWaMApEWk7OyK6uc2QD3+W3IO7NFtRS9fhU0v7MGzADGJxanIfii5R3wrjOm2Evd0bUQ6D5R801s3QyKz/5tbusAtqCT8mGnwvEbz0wm6piidSFj0e+HZkV4BDbfZw=

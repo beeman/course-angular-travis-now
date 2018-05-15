@@ -4,10 +4,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "now:deploy": "now -e NODE_ENV=production --token $NOW_TOKEN --npm",
+    "now:alias": "now alias --token=$NOW_TOKEN"
+  },
+  "now": {
+    "name": "angular-travis-now",
+    "alias": "angular-travis-now.now.sh"
   },
   "private": true,
   "dependencies": {
