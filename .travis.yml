@@ -7,7 +7,6 @@ cache:
   - npm
 
 script:
-  - npm install
   - npm run build
   - npm run now:deploy
 
